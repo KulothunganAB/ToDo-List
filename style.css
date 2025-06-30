@@ -1,0 +1,114 @@
+/* style.css */
+body {
+  background: linear-gradient(to right, #0d8099, #0083b0);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background-color: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  width: 400px;
+  text-align: center;
+}
+
+h1 {
+  color: #0083b0;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  width: 70%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  border: 2px solid #0083b0;
+  outline: none;
+}
+
+button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  background-color: #0083b0;
+  color: white;
+  cursor: pointer;
+  margin: 5px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #005f75;
+}
+
+button.clear {
+  background-color: crimson;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+li {
+  background-color: #1e6fb6;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  animation: slideIn 0.3s ease;
+}
+
+li.completed {
+  text-decoration: line-through;
+  color: gray;
+}
+
+li button {
+  background-color: crimson;
+  font-size: 12px;
+  padding: 5px 10px;
+}
+
+li button:hover {
+  background-color: darkred;
+}
+
+.counter {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.theme-toggle {
+  margin: 10px 0;
+}
+
+body.dark {
+  background: #121212;
+  color: #f0f0f0;
+}
+
+body.dark .container {
+  background-color: #1e1e1e;
+  color: #f0f0f0;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
