@@ -1,0 +1,30 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>ToDo List</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="Photos/todoicon.png">
+</head>
+
+<body>
+  <div class="container">
+    <h1>ToDo List</h1>
+    <input id="input" type="text" placeholder="Enter a task">
+    <button onclick="add()">Add</button>
+    <button onclick="clearAll()" class="clear">Clear All</button>
+    <input type="text" id="search" placeholder="Search tasks">
+    <div class="theme-toggle">
+      <label>Dark Mode</label>
+      <input type="checkbox" id="darkToggle">
+    </div>
+    <ul id="list-container"></ul>
+    <div class="counter" id="counter"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
